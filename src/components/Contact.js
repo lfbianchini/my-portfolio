@@ -1,27 +1,37 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
+
+    const templateParams = {
+      name,
+      email,
+      message,
+    };
+
+    emailjs
+      .send(
+        "service_uy6tvmg", // Replace with your EmailJS Service ID
+        "template_7nd3ebw", // Replace with your EmailJS Template ID
+        templateParams,
+        "R6lNa6zuy_sfZGc8p" // Replace with your EmailJS User ID
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message sent!");
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          alert("Failed to send the message. Please try again.");
+        }
+      );
   }
 
   return (
@@ -64,15 +74,17 @@ export default function Contact() {
           </div>
         </div>
         <form
-          netlify
-          name="contact"
           onSubmit={handleSubmit}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Contact Me
           </h2>
           <p className="leading-relaxed mb-5">
-          I'm always excited to collaborate on innovative projects. Whether you need a skilled developer for your next big idea or a problem-solver to enhance your existing solutions, I'm here to help bring your vision to life.
+            I'm always excited to collaborate on innovative projects. Whether you
+            need a skilled developer for your next big idea or a problem-solver to
+            enhance your existing solutions, I'm here to help bring your vision to
+            life.
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -101,7 +113,8 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
+              className="leading-7 text-sm text-gray-400"
+            >
               Message
             </label>
             <textarea
@@ -113,7 +126,8 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          >
             Submit
           </button>
         </form>
