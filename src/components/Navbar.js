@@ -19,6 +19,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
+      style={{ paddingTop: 'env(safe-area-inset-top)' }} // for iOS notch support
     >
       <div className="container mx-auto flex flex-wrap p-3 md:p-5 flex-col md:flex-row items-center">
         <a href="#about" className="title-font font-medium text-white mb-4 md:mb-0 text-xl">

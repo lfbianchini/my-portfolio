@@ -7,5 +7,29 @@ html {
   }
   
   body {
+    background-color: black;
     padding-top: 60px; /* Adjust this value based on your navbar height */
   }
+
+
+  /* Adjust padding for the header on smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+      padding: 2rem 1rem; /* Adjust as needed */
+    }
+    .navbar a.title-font {
+      font-size: 1.25rem; /* Smaller font size for mobile */
+    }
+  }
+  
+  /* Ensure the about section isn't covered by the navbar */
+  #about {
+    padding-top: 4rem; /* Add enough padding to push the content below the navbar */
+  }
+  
+  @media (max-width: 768px) {
+    #about {
+      padding-top: 6rem; /* Increase padding on mobile */
+    }
+  }
+  
