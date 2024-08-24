@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    scroll-padding-top: 70px; /* Adjust this value based on your navbar height */
+  }
+  
+  body {
+    padding-top: 60px; /* Adjust this value based on your navbar height */
+  }
