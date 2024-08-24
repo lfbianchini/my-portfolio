@@ -12,8 +12,8 @@ export default function About() {
           I'm a second-year Computer Science student at the University of San Francisco, 
           passionate about programming and creating projects that simplify lives. Proficient 
           in Java and Python, with growing C skills, I love developing passion projects that 
-          challenge me. I'm adept at web scraping using Selenium and Jsoup, and while competent 
-          in React, my true passion lies in backend development with FastAPI and Express.js. 
+          challenge me. I'm adept at web scraping using Selenium and JSoup, and while competent 
+          in React, my true passion lies in backend development, where I have used FastAPI, Express.js, and PostgreSQL. 
           My strengths include object-oriented design and project structuring, with a particular 
           satisfaction in integrating frontend and backend systems.
           </p>

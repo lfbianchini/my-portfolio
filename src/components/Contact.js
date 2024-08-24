@@ -58,12 +58,18 @@ export default function Contact() {
                 2130 Fulton St. <br />
                 San Francisco, CA 94117
               </p>
+              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                LINKEDIN
+              </h2>
+              <a href="https://www.linkedin.com/in/luca-bianchini-650923288/" className="text-indigo-400 leading-relaxed">
+                https://www.linkedin.com/in/luca-bianchini-650923288/
+              </a>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
+              <a href="mailto:lfbianchini@dons.usfca.edu" className="text-indigo-400 leading-relaxed">
                 lfbianchini@dons.usfca.edu
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
