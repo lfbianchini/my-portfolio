@@ -58,40 +58,62 @@ export default function Contact() {
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mb-2">
-                LINKEDIN
-              </h2>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                href="https://www.linkedin.com/in/luca-bianchini-650923288/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-indigo-400 leading-relaxed break-all hover:text-indigo-200 transition-colors duration-300"
-              >
-                linkedin.com/in/luca-bianchini-650923288
-              </motion.a>
+              <div className="flex flex-col">
+                <h2 className="title-font font-semibold text-white tracking-widest text-xs mb-2">
+                  LINKEDIN
+                </h2>
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  href="https://www.linkedin.com/in/luca-bianchini-650923288" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-indigo-400 leading-relaxed break-all hover:text-indigo-200 transition-colors duration-300"
+                >
+                  linkedin.com/in/luca-bianchini-650923288
+                </motion.a>
+              </div>
+
+              <div className="flex flex-col mt-4">
+                <h2 className="title-font font-semibold text-white tracking-widest text-xs mb-2">
+                  GITHUB
+                </h2>
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  href="https://github.com/lfbianchini" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-indigo-400 leading-relaxed break-all hover:text-indigo-200 transition-colors duration-300"
+                >
+                  github.com/lfbianchini
+                </motion.a>
+              </div>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mb-2">
-                EMAIL
-              </h2>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                href="mailto:lfbianchini@dons.usfca.edu" 
-                className="text-indigo-400 leading-relaxed hover:text-indigo-200 transition-colors duration-300"
-              >
-                lfbianchini@dons.usfca.edu
-              </motion.a>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4 mb-2">
-                PHONE
-              </h2>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                href="tel:+16506608100" 
-                className="text-indigo-400 leading-relaxed hover:text-indigo-200 transition-colors duration-300"
-              >
-                650-660-8100
-              </motion.a>
+              <div className="flex flex-col">
+                <h2 className="title-font font-semibold text-white tracking-widest text-xs mb-2">
+                  EMAIL
+                </h2>
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  href="mailto:lfbianchini@dons.usfca.edu" 
+                  className="text-indigo-400 leading-relaxed hover:text-indigo-200 transition-colors duration-300"
+                >
+                  lfbianchini@dons.usfca.edu
+                </motion.a>
+              </div>
+
+              <div className="flex flex-col mt-4">
+                <h2 className="title-font font-semibold text-white tracking-widest text-xs mb-2">
+                  PHONE
+                </h2>
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  href="tel:+16506608100" 
+                  className="text-indigo-400 leading-relaxed hover:text-indigo-200 transition-colors duration-300"
+                >
+                  650-660-8100
+                </motion.a>
+              </div>
             </div>
           </div>
         </motion.div>
