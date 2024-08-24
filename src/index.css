@@ -3,33 +3,29 @@
 @tailwind utilities;
 
 html {
-    scroll-padding-top: 70px; /* Adjust this value based on your navbar height */
-  }
-  
-  body {
-    background-color: black;
-    padding-top: 60px; /* Adjust this value based on your navbar height */
-  }
+  scroll-padding-top: 70px; /* Adjust this value based on your navbar height */
+}
 
+body {
+  background-color: #111827;
+  padding-top: 0; /* Remove padding-top from the body */
+}
 
-  /* Adjust padding for the header on smaller screens */
+/* Default padding for larger screens */
+#about {
+  padding-top: 2rem; /* Start with a smaller padding */
+}
+
+/* Increase padding on smaller screens */
 @media (max-width: 768px) {
-    .navbar {
-      padding: 2rem 1rem; /* Adjust as needed */
-    }
-    .navbar a.title-font {
-      font-size: 1.25rem; /* Smaller font size for mobile */
-    }
+  .navbar {
+    padding: 2rem 1rem; /* Adjust as needed */
   }
-  
-  /* Ensure the about section isn't covered by the navbar */
+  .navbar a.title-font {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
   #about {
-    padding-top: 4rem; /* Add enough padding to push the content below the navbar */
+    padding-top: 7rem; /* Add enough padding to push content below the navbar */
   }
-  
-  @media (max-width: 768px) {
-    #about {
-      padding-top: 6rem; /* Increase padding on mobile */
-    }
-  }
-  
+}

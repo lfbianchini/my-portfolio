@@ -11,7 +11,7 @@ export const projects = [
     title: "IDWR Office",
     subtitle: "Python, Selenium, Tkinter",
     description:
-      "This project management software, developed for investment company interns, streamlines workflow with automated LinkedIn verification and email notifications. It features data handling with Pydantic, parallel processing for enhanced performance, and an export feature for formatted Excel reports.",
+      "This project management software, developed for investment company interns, streamlines workflow with automated LinkedIn and email verification, message sending, and notifications. It features data handling with Pydantic, parallel processing for enhanced performance, and an export feature for formatted Excel reports.",
     image: "./project-2.gif",
     link: "https://github.com/rohanshah35/idwr-sleuth-tool",
   },
