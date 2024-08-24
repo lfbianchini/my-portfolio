@@ -36,6 +36,7 @@ export default function Projects() {
               href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-4"
+              style={{ zIndex: 5 }} // Lower z-index for project cards
             >
               <div className="flex relative overflow-hidden group">
                 <img
