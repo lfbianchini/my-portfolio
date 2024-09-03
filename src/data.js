@@ -1,5 +1,21 @@
 export const projects = [
   {
+    title: "Ergon Study Tool",
+    subtitle: "PostgreSQL, React, Node.js, Azure OCR, GPT-4",
+    description:
+      "A full-stack web app allowing users to upload notes, transcribe them with Azure OCR, and generate study guides, flashcards, and summaries using GPT-4. It includes secure file storage with AWS S3 and a responsive React interface for seamless user experience.",
+    image: "./project-5.gif",
+    link: "https://github.com/ergon-app/ergon",
+  },
+  {
+    title: "RateMyProfessors Utility Tool",
+    subtitle: "Java, Selenium, JavaFX",
+    description:
+      "This Java application analyzes professor ratings using web scraping and natural language processing techniques. It provides comprehensive insights through sentiment analysis, grade averaging, and data visualization, showcasing skills in data processing and GUI development.",
+    image: "./project-3.gif",
+    link: "https://github.com/lfbianchini/RMP-Search-Tool",
+  },
+  {
     title: "AWS S3 File Uploading/Downloading Site",
     subtitle: "JavaScript, React, Express.js, AWS SDK, PostgreSQL",
     description:
@@ -11,17 +27,9 @@ export const projects = [
     title: "IDWR Office",
     subtitle: "Python, Selenium, Tkinter",
     description:
-      "This project management software, developed for investment company interns, streamlines workflow with automated LinkedIn and email verification, message sending, and notifications. It features data handling with Pydantic, parallel processing for enhanced performance, and an export feature for formatted Excel reports.",
+      "This project management software, developed for investment company interns, streamlines workflow with automated LinkedIn verification and email notifications. It features data handling with Pydantic, parallel processing for enhanced performance, and an export feature for formatted Excel reports.",
     image: "./project-2.gif",
     link: "https://github.com/rohanshah35/idwr-sleuth-tool",
-  },
-  {
-    title: "RateMyProfessors Utility Tool",
-    subtitle: "Java, Selenium, JavaFX",
-    description:
-      "This Java application analyzes professor ratings using web scraping and natural language processing techniques. It provides comprehensive insights through sentiment analysis, grade averaging, and data visualization, showcasing skills in data processing and GUI development.",
-    image: "./project-3.gif",
-    link: "https://github.com/lfbianchini/RMP-Search-Tool",
   },
   {
     title: "Archive Searcher and Organizer",
@@ -39,14 +47,12 @@ export const skills = [
   "JavaScript",
   "Selenium",
   "JSoup",
-  "Node.js",
-  "Express.js",
   "PostgreSQL",
+  "Express.js",
   "React",
   "Web Scraping",
-  "Object-Orientated Programming",
+  "Full-Stack Development",
   "Project Management",
   "Agile Methodologies",
   "Teamwork and Collaboration"
-
 ];

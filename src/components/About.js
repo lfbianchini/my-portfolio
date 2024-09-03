@@ -15,19 +15,13 @@ export default function About() {
             Hi, I'm <span className="text-green-500">Luca</span>.
           </h1>
           <p className="mb-8 leading-relaxed text-gray-300">
-            I'm a second-year Computer Science student at the University of San Francisco, 
-            passionate about programming and creating projects that simplify lives. Proficient 
-            in Java and Python, with growing C skills, I love developing passion projects that 
-            challenge me. I'm adept at web scraping using Selenium and JSoup, and while competent 
-            in React, my true passion lies in backend development, where I have used FastAPI, Express.js, and PostgreSQL. 
-            My strengths include object-oriented design and project structuring, with a particular 
-            satisfaction in integrating frontend and backend systems.
+          I'm a second-year Computer Science student at the University of San Francisco with a deep passion for programming and building projects that make life easier. Skilled in Java, Python, and JavaScript, with emerging proficiency in C, I thrive on developing challenging projects. My expertise includes web scraping with Selenium and Jsoup, and while I'm skilled in React, my real enthusiasm lies in backend development using Express.js and FastAPI. I excel in object-oriented design and project structuring, and I take great pride in seamlessly integrating frontend and backend systems.
           </p>
           <div className="flex flex-wrap justify-center">
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://drive.google.com/file/d/1F0YhHDk2O1EDMOgTAcIjDhdP-2DAt2py/view"
+              href="https://drive.google.com/file/d/1ONoEwr3VLVEW7i_uWAdNjB4Bt6U-Aj4s/view?usp=sharing"
               className="inline-flex text-white bg-green-500 border-0 py-1 px-4 md:py-2 md:px-6 focus:outline-none hover:bg-green-600 rounded text-sm md:text-lg m-1 transition-colors duration-300"
             >
               View My Resume
