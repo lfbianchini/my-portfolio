@@ -21,7 +21,7 @@ export default function About() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://drive.google.com/file/d/1ONoEwr3VLVEW7i_uWAdNjB4Bt6U-Aj4s/view?usp=sharing"
+              href="https://drive.google.com/file/d/1v28BIuKEpwPTgGKruHRuqN2y-UmzuN8u/view"
               className="inline-flex text-white bg-green-500 border-0 py-1 px-4 md:py-2 md:px-6 focus:outline-none hover:bg-green-600 rounded text-sm md:text-lg m-1 transition-colors duration-300"
             >
               View My Resume
