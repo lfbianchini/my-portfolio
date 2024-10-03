@@ -42,17 +42,12 @@ export const projects = [
 ];
 
 export const skills = [
-  "Java",
-  "Python",
-  "JavaScript",
-  "Selenium",
-  "JSoup",
-  "PostgreSQL",
-  "Express.js",
+  "JavaScript/TypeScript",
   "React",
-  "Web Scraping",
-  "Full-Stack Development",
-  "Project Management",
-  "Agile Methodologies",
-  "Teamwork and Collaboration"
+  "Node.js & Express.js",
+  "AWS (S3, Lambda, DynamoDB)",
+  "Python",
+  "Java",
+  "GraphQL",
+  "PostgreSQL",
 ];

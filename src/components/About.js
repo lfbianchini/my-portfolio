@@ -14,8 +14,17 @@ export default function About() {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm <span className="text-green-500">Luca</span>.
           </h1>
+          <p className="mb-4 leading-relaxed text-gray-300">
+            I'm a second-year Computer Science student at the University of San Francisco with a deep passion for programming and building impactful solutions.
+          </p>
+          <p className="mb-4 leading-relaxed text-gray-300">
+            As a Software Engineering Intern at Lasaria, I've honed my skills in backend development, working with Express, GraphQL, and AWS services to enhance music streaming and social media applications. My expertise extends to full-stack development, demonstrated by my contract work at E2E Mfg, where I built a cross-platform Electron application using React, Vite, and TypeScript.
+          </p>
+          <p className="mb-4 leading-relaxed text-gray-300">
+            Proficient in Java, Python, JavaScript, and TypeScript, with growing experience in C, I thrive on developing challenging projects that span from web scraping to cloud-based solutions. While I'm adept at frontend technologies like React, my true passion lies in backend development, particularly with Express.js and AWS services like Lambda and DynamoDB.
+          </p>
           <p className="mb-8 leading-relaxed text-gray-300">
-          I'm a second-year Computer Science student at the University of San Francisco with a deep passion for programming and building projects that make life easier. Skilled in Java, Python, and JavaScript, with emerging proficiency in C, I thrive on developing challenging projects. My expertise includes web scraping with Selenium and Jsoup, and while I'm skilled in React, my real enthusiasm lies in backend development using Express.js and FastAPI. I excel in object-oriented design and project structuring, and I take great pride in seamlessly integrating frontend and backend systems.
+            My project portfolio showcases my ability to leverage cutting-edge technologies, from AI-powered note organization systems to sentiment analysis tools for professor ratings. I'm committed to continuous learning and applying my skills to create innovative, user-centric solutions that make a difference.
           </p>
           <div className="flex flex-wrap justify-center">
             <motion.a
