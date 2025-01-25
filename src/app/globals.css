@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: var(--mantine-color-body);;
   --foreground: var(--mantine-color-body);;
