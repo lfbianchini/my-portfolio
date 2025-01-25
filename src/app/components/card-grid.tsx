@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useRef, useEffect, SetStateAction } from 'react';
 import { motion } from 'framer-motion';
 import { 
   ArrowUpRight, 
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: 'Intern Management',
-    description: 'Project management tool with LinkedIn verification and reporting',
+    description: 'Project management tool with LinkedIn functionality and automation',
     technologies: ['Python', 'Selenium', 'Tkinter', 'Excel'],
     image: 'gifs/project-2.gif',
     link: 'https://github.com/rohanshah35/idwr-sleuth-tool'
@@ -53,9 +53,21 @@ const projects = [
 
 export function ProjectsSection() {
   const [activeProject, setActiveProject] = useState(0);
+  const projectDetailsRef = useRef<HTMLDivElement>(null);
+
+  const handleProjectClick = (index: SetStateAction<number>) => {
+    setActiveProject(index);
+    
+    if (window.innerWidth < 768) {
+      projectDetailsRef.current?.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  };
 
   return (
-    <div className="min-h-screen py-16 px-4 md:px-16">
+    <div className="min-h-screen bg-[#121212] py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 tracking-tight">
           My <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A594F9] to-[#6247AA]">Projects</span>
@@ -83,7 +95,7 @@ export function ProjectsSection() {
                     : 'border-transparent hover:bg-[#4D4855]'}
                   transition-all duration-300
                 `}
-                onClick={() => setActiveProject(index)}
+                onClick={() => handleProjectClick(index)}
               >
                 <div className="flex justify-between items-center">
                   <h3 className="text-xl font-semibold text-white">{project.title}</h3>
@@ -96,6 +108,7 @@ export function ProjectsSection() {
 
           {/* Project Details */}
           <motion.div
+            ref={projectDetailsRef}
             key={activeProject}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

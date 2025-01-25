@@ -7,7 +7,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className=" py-16 px-4 bg-[#262528] md:px-16">
+    <footer className=" py-16 px-4 bg-[#121212] md:px-16">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">
           Let&apos;s <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7A7ADB] to-[#FFFFFF]">Keep in Touch</span>

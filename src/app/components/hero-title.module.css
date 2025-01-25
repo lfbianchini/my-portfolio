@@ -1,85 +1,130 @@
 .wrapper {
-    position: relative;
-    box-sizing: border-box;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row; /* Change from column to row for side-by-side layout */
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem; /* Add space between text and image grid */
-    background-color: #242424;
-  }
-  
-  .inner {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+.content {
+  flex: 1;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.control-primary {
+  height: 50px;
+  padding: 0 1.5rem;
+  border-radius: 8px;
+  color: #4DABF7;
+  border-color: #4DABF7;
+  transition: all 0.3s ease;
+}
+
+.control-secondary {
+  height: 50px;
+  padding: 0 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.control-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.control-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 500px;
+  flex: 1;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.gridImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gridImage:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
     text-align: center;
+  }
+
+  .content {
     max-width: 100%;
-    width: 700px;
-    padding-bottom: 2rem;
+    align-items: center;
   }
-  
-  .title {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
-    font-weight: 800;
-    line-height: 1.2;
-    margin: 0;
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  }
-  
-  .description {
-    margin-top: var(--mantine-spacing-xl);
-    font-size: clamp(1rem, 3vw, 1.375rem);
-    max-width: 100%;
-    color: #828282;
-  }
-  
+
   .controls {
-    margin-top: calc(var(--mantine-spacing-xl) * 2);
     justify-content: center;
-    flex-wrap: wrap;
-    min-width: 100%;
-    min-height: 100%;
   }
-  
-  .control {
-    height: 54px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0.5rem;
-    border: calc(0.0625rem * var(--mantine-scale)) solid var(--mantine-color-default-border); /* Border width and color */
-    background-color: #2E2E2E;
-  }
-  
+
   .imageGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns for square containers */
-    grid-auto-rows: 1fr; /* Maintain square aspect ratio */
-    gap: 1rem; /* Padding between images */
-    width: auto; /* Adjust size based on content */
-    max-width: 400px; /* Limit grid width */
+    max-width: 400px;
+    margin-top: 2rem;
   }
-  
-  .imageGrid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
   }
-  
-  .imageGrid img:hover {
-    transform: scale(1.05);
+
+  .title {
+    font-size: clamp(2rem, 8vw, 3rem);
   }
-  
-  @media (max-width: 768px) {
-    .wrapper {
-      flex-direction: column; /* Stack text and images vertically on smaller screens */
-      gap: 1rem;
-    }
-  
-    .imageGrid {
-      grid-template-columns: repeat(2, 1fr); /* Maintain two columns on smaller screens */
-      /* max-width: 100%; */
-    }
-  }
+}

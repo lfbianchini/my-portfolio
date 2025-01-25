@@ -12,13 +12,15 @@ const experiences = [
     company: 'Lasaria',
     role: 'Software Engineering Intern',
     date: 'September 2024 - January 2025',
-    description: 'Designed and implemented scalable backend architecture using Express.js and AWS services like S3, DynamoDB, Cognito, Lambda, and Elasticache. Built frontend components with React Native and state management using Zustand.',
+    description: 'Designed and implemented scalable backend architecture using Express.js and AWS services like S3, DynamoDB, Cognito, Lambda, and Elasticache. Built frontend components with React Native and implemented state management using Zustand.',
     technologies: ['Express.js', 'AWS', 'React Native', 'Zustand', 'DynamoDB'],
     image: 'images/lasaria.jpg',
     responsibilities: [
-      'Developed backend services for music upload and streaming',
-      'Implemented metadata processing and playlist management',
-      'Integrated frontend components with cloud services'
+      'Architected scalable backend infrastructure for music platform, implementing efficient DynamoDB schema with GSIs for optimized track, album, and artist metadata retrieval',
+      'Developed Lambda-based audio conversion pipeline, transcoding 15+ file formats to .ogg and reducing storage requirements by 30%',
+      'Constructed comprehensive metadata extraction system, automatically processing technical audio attributes and generating structured database entries',
+      'Implemented concurrent multi-file upload processing with advanced XHR techniques, enabling simultaneous handling of multiple track uploads and form data, optimizing backend throughput and reducing overall upload latency.'
+
     ]
   },
   {
@@ -39,7 +41,7 @@ export function ExperienceSection() {
   const [activeExperience, setActiveExperience] = useState(0);
 
   return (
-    <div className="min-h-screen py-16 px-4 md:px-16">
+    <div className="bg-[#121212] min-h-screen py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 tracking-tight">
           My <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7A7ADB] to-[#FFFFFF]">Experience</span>

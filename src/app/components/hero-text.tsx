@@ -5,7 +5,7 @@ import classes from './hero-text.module.css';
 export function HeroText() {
   return (
     <Container 
-      className={`${classes.wrapper} bg-gradient-to-br from-[#3A3640] to-[#000000] text-white`} size={3000}
+      className={`${classes.wrapper} bg-gradient-to-br from-[#3A3640] to-[#121212] text-white`} size={3000}
     >
       <Dots className={`${classes.dots} opacity-20`} style={{ left: 0, top: 0 }} />
       <Dots className={`${classes.dots} opacity-20`} style={{ left: 60, top: 0 }} />
