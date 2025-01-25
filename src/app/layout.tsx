@@ -15,27 +15,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luca Bianchini's Portfolio",
-  description: "My personal portfolio website",
+  title: "Luca Bianchini | Full Stack Developer",
+  description: "19-year-old full stack developer creating intuitive web applications",
+  metadataBase: new URL("https://lucabianchini.dev"),
   openGraph: {
-    title: "Luca Bianchini's Portfolio",
-    description: "My personal portfolio website",
+    title: "Luca Bianchini - Portfolio",
+    description: "19-year-old full stack developer creating intuitive web applications",
     url: "https://lucabianchini.dev",
     images: [
       {
-        url: "https://ibb.co/HnQq00N",
-        width: 150,
-        height: 150,
-        alt: "Preview of Luca Bianchini's Portfolio",
+        url: "/images/image_2.jpg", // Use a path from your public folder
+        width: 1200,
+        height: 630,
+        alt: "Luca Bianchini's Portfolio Preview",
       },
     ],
     type: "website",
+    siteName: "Luca Bianchini Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Luca Bianchini's Portfolio",
-    description: "My personal portfolio website",
-    images: "https://ibb.co/HnQq00N",
+    title: "Luca Bianchini | Full Stack Developer",
+    description: "19-year-old full stack developer creating intuitive web applications",
+    images: "/images/image_2.jpg",
+    creator: "@your_twitter_handle",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
