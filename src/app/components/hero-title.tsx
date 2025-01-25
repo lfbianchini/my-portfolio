@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Container, Group, Text, Stack } from '@mantine/core';
 import { IconBrandGithub, IconDownload } from '@tabler/icons-react';
 import classes from './hero-title.module.css';
+import Image from 'next/image';
 
 export function HeroTitle() {
   return (
@@ -54,14 +55,14 @@ export function HeroTitle() {
         
         <div className={classes.imageGrid}>
           <div className={classes.imageWrapper}>
-            <img 
+            <Image 
               src="images/image_2.jpg" 
               alt="Project 2" 
               className={classes.gridImage} 
             />
           </div>
           <div className={classes.imageWrapper}>
-            <img 
+            <Image 
               src="images/image_5.jpg" 
               alt="Project 5" 
               className={classes.gridImage} 
