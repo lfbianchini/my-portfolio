@@ -14,12 +14,12 @@
     position: absolute;
     color: rgba(255,255,255,0.1);
   }
-  
   .title {
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-size: clamp(3rem, 7vw, 4.5rem); /* Increase the min, max, and preferred sizes */
     font-family: 'Inter', sans-serif;
-    text-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
   
   .highlight {
     background: linear-gradient(to right, #A594F9, #6247AA);

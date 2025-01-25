@@ -1,4 +1,4 @@
-import { Container, Text, Title } from '@mantine/core';
+import { Container, Text } from '@mantine/core';
 import { Dots } from './dots';
 import classes from './hero-text.module.css';
 
@@ -13,17 +13,9 @@ export function HeroText() {
       <Dots className={`${classes.dots} opacity-20`} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Title 
-          className={`${classes.title} text-center text-5xl md:text-6xl font-bold tracking-tight mb-6`}
-        >
-          <Text 
-            variant="gradient" 
-            gradient={{ from: '#A594F9', to: '#6247AA' }} 
-            className="bg-clip-text text-transparent text-lg"
-          >
-            Who am I?
-          </Text>
-        </Title>
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 tracking-tight">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A594F9] to-[#A594F9]">Who am I?</span>
+        </h2>
 
         <Container p={0} size={700} className="text-center">
           <Text 
@@ -34,8 +26,8 @@ export function HeroText() {
             <Text 
               component="span" 
               variant="gradient" 
-              gradient={{ from: '#A594F9', to: '#6247AA' }} 
-              className="font-semibold"
+              gradient={{ from: '#A594F9', to: '#A594F9' }} 
+              className="font-bold"
               inherit
             >
               University of San Francisco
@@ -46,7 +38,7 @@ export function HeroText() {
             <Text 
               component="span" 
               variant="gradient" 
-              gradient={{ from: '#A594F9', to: '#6247AA' }} 
+              gradient={{ from: '#A594F9', to: '#A594F9' }} 
               className="font-semibold"
               inherit
             >
@@ -58,7 +50,7 @@ export function HeroText() {
             <Text 
               component="span" 
               variant="gradient" 
-              gradient={{ from: '#A594F9', to: '#6247AA' }} 
+              gradient={{ from: '#A594F9', to: '#A594F9' }} 
               className="font-semibold"
               inherit
             >
@@ -70,7 +62,7 @@ export function HeroText() {
             <Text 
               component="span" 
               variant="gradient" 
-              gradient={{ from: '#A594F9', to: '#6247AA' }} 
+              gradient={{ from: '#A594F9', to: '#A594F9' }} 
               className="font-semibold"
               inherit
             >
@@ -82,7 +74,7 @@ export function HeroText() {
             <Text 
               component="span" 
               variant="gradient" 
-              gradient={{ from: '#A594F9', to: '#6247AA' }} 
+              gradient={{ from: '#A594F9', to: '#A594F9' }} 
               className="font-semibold"
               inherit
             >

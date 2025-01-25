@@ -9,6 +9,18 @@ import {
 
 const experiences = [
   {
+    company: 'Curriculum Associates',
+    role: 'Software Engineer Intern',
+    date: 'June 2025 - August 2025',
+    description: 'Upcoming internship focused on software engineering and product development.',
+    technologies: ['TBD'],
+    image: 'images/curriculum.jpg',
+    responsibilities: [
+      'Preparing for upcoming internship',
+      'Excited to contribute to innovative educational technology'
+    ]
+  },
+  {
     company: 'Lasaria',
     role: 'Software Engineering Intern',
     date: 'September 2024 - January 2025',
@@ -22,18 +34,6 @@ const experiences = [
       'Implemented concurrent multi-file upload processing with advanced XHR techniques, enabling simultaneous handling of multiple track uploads and form data, optimizing backend throughput and reducing overall upload latency.'
     ]
   },
-  {
-    company: 'Curriculum Associates',
-    role: 'Software Engineer Intern',
-    date: 'June 2025 - August 2025',
-    description: 'Upcoming internship focused on software engineering and product development.',
-    technologies: ['TBD'],
-    image: 'images/curriculum.jpg',
-    responsibilities: [
-      'Preparing for upcoming internship',
-      'Excited to contribute to innovative educational technology'
-    ]
-  }
 ];
 
 export function ExperienceSection() {
@@ -55,11 +55,10 @@ export function ExperienceSection() {
     <div className="bg-[#121212] min-h-screen py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 tracking-tight">
-          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7A7ADB] to-[#FFFFFF]">Experience</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A594F9] to-[#A594F9]">My Experience</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Experience List */}
           <div className="space-y-4">
             {experiences.map((exp, index) => (
               <motion.div
@@ -84,7 +83,7 @@ export function ExperienceSection() {
               >
                 <div className="flex justify-between items-center">
                   <h3 className="text-xl font-semibold text-white">
-                    <span className="text-[#7A7ADB]">{exp.role}</span> @ {exp.company}
+                    <span className="font-bold">{exp.role}</span> @ {exp.company}
                   </h3>
                   <Building className="text-[#7A7ADB]" />
                 </div>

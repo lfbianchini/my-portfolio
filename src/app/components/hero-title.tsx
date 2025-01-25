@@ -15,7 +15,7 @@ export function HeroTitle() {
               <Text 
                 component="span" 
                 variant="gradient" 
-                gradient={{ from: '#A594F9', to: '#6247AA' }} 
+                gradient={{ from: '#A594F9', to: '#A594F9' }} 
                 inherit
               >
                 Luca Bianchini

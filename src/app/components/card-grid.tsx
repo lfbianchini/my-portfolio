@@ -70,7 +70,7 @@ export function ProjectsSection() {
     <div className="min-h-screen bg-[#121212] py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 tracking-tight">
-          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A594F9] to-[#6247AA]">Projects</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A594F9] to-[#A594F9]">My Projects</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
