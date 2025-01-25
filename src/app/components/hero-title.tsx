@@ -59,6 +59,8 @@ export function HeroTitle() {
               src="images/image_2.jpg" 
               alt="Project 2" 
               className={classes.gridImage} 
+              width={300}
+              height={300}
             />
           </div>
           <div className={classes.imageWrapper}>
@@ -66,6 +68,8 @@ export function HeroTitle() {
               src="images/image_5.jpg" 
               alt="Project 5" 
               className={classes.gridImage} 
+              width={300}
+              height={300}
             />
           </div>
         </div>

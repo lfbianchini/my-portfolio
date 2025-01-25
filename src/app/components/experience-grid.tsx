@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useRef, SetStateAction } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Building, 
@@ -20,7 +20,6 @@ const experiences = [
       'Developed Lambda-based audio conversion pipeline, transcoding 15+ file formats to .ogg and reducing storage requirements by 30%',
       'Constructed comprehensive metadata extraction system, automatically processing technical audio attributes and generating structured database entries',
       'Implemented concurrent multi-file upload processing with advanced XHR techniques, enabling simultaneous handling of multiple track uploads and form data, optimizing backend throughput and reducing overall upload latency.'
-
     ]
   },
   {
@@ -39,6 +38,18 @@ const experiences = [
 
 export function ExperienceSection() {
   const [activeExperience, setActiveExperience] = useState(0);
+  const experienceDetailsRef = useRef<HTMLDivElement>(null);
+
+  const handleExperienceClick = (index: SetStateAction<number>) => {
+    setActiveExperience(index);
+    
+    if (window.innerWidth < 768) {
+      experienceDetailsRef.current?.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  };
 
   return (
     <div className="bg-[#121212] min-h-screen py-16 px-4 md:px-16">
@@ -69,7 +80,7 @@ export function ExperienceSection() {
                     : 'border-transparent hover:bg-[#4D4855]'}
                   transition-all duration-300
                 `}
-                onClick={() => setActiveExperience(index)}
+                onClick={() => handleExperienceClick(index)}
               >
                 <div className="flex justify-between items-center">
                   <h3 className="text-xl font-semibold text-white">
@@ -87,6 +98,7 @@ export function ExperienceSection() {
 
           {/* Experience Details */}
           <motion.div
+            ref={experienceDetailsRef}
             key={activeExperience}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
