@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import { 
   ArrowUpRight, 
   Code, 
-  Database, 
-  CloudCog 
 } from 'lucide-react';
 
 const projects = [

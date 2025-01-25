@@ -1,4 +1,4 @@
-import { Button, Container, Text, Title } from '@mantine/core';
+import { Container, Text, Title } from '@mantine/core';
 import { Dots } from './dots';
 import classes from './hero-text.module.css';
 
@@ -30,7 +30,7 @@ export function HeroText() {
             size="xl" 
             className="text-gray-300 leading-relaxed text-xl font-light"
           >
-            I'm a second year Computer Science student at the {' '}
+            I&apos;m a second year Computer Science student at the {' '}
             <Text 
               component="span" 
               variant="gradient" 
@@ -42,7 +42,7 @@ export function HeroText() {
             </Text>
             , who loves all things tech. 
 
-            Currently, I'm focused on {' '}
+            Currently, I&apos;m focused on {' '}
             <Text 
               component="span" 
               variant="gradient" 
@@ -62,7 +62,7 @@ export function HeroText() {
               className="font-semibold"
               inherit
             >
-              "algowar"
+              &quot;algowar&quot;
             </Text>
             , a platform for users to engage in solo or multiplayer coding challenges.
 

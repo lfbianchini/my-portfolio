@@ -7,7 +7,7 @@ export function HeroTitle() {
     <div className={classes.wrapper} id="home">
       <Container size={700} className={classes.inner}>
         <h1 className={classes.title}>
-          Hi, I'm{' '}
+          Hi, I&apos;m{' '}
           <Text component="span" variant="gradient" gradient={{ from: '#A594F9', to: '#6247AA' }} inherit>
             Luca Bianchini
           </Text>
