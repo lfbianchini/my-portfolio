@@ -1,0 +1,28 @@
+.wrapper {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    overflow: hidden;
+  }
+  
+  .inner {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .dots {
+    position: absolute;
+    color: rgba(255,255,255,0.1);
+  }
+  
+  .title {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-family: 'Inter', sans-serif;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .highlight {
+    background: linear-gradient(to right, #A594F9, #6247AA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

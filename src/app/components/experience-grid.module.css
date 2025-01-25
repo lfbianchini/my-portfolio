@@ -1,0 +1,44 @@
+.card {
+    transition: 
+      transform 150ms ease,
+      box-shadow 150ms ease;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .wrapper {
+    background: linear-gradient(to bottom right, #0A192F, #112240);
+    padding: 4rem 0;
+  }
+  
+  .heading {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #A594F9, #6247AA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      max-width: 100%;
+    }
+    
+    .heading {
+      font-size: 2.5rem;
+    }
+  }
