@@ -68,7 +68,7 @@ export function HeroText() {
             >
               interned at Lasaria
             </Text>
-            {' '} from September 2024 to January 2025, contributing to a new music streaming platform.
+            {' '} from September 2024 to February 2025, contributing to a new music streaming mobile platform.
 
             I {' '}
             <Text 

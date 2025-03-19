@@ -22,8 +22,8 @@ const experiences = [
   },
   {
     company: 'Lasaria',
-    role: 'Software Engineering Intern',
-    date: 'September 2024 - January 2025',
+    role: 'Software Engineer Intern',
+    date: 'September 2024 - February 2025',
     description: 'Designed and implemented scalable backend architecture using Express.js and AWS services like S3, DynamoDB, Cognito, Lambda, and Elasticache. Built frontend components with React Native and implemented state management using Zustand.',
     technologies: ['Express.js', 'AWS', 'React Native', 'Zustand', 'DynamoDB'],
     image: 'images/lasaria.jpg',
