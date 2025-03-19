@@ -45,7 +45,7 @@ export function Footer() {
           </a>
           
           <a 
-            href="mailto:lucafbianchini@yahoo.com"
+            href="mailto:lfbianchini@dons.usfca.edu"
             className="
               text-[#7A7ADB] 
               hover:text-white 
