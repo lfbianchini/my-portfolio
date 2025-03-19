@@ -35,6 +35,7 @@ export function HeroTitle() {
               leftSection={<IconDownload size={20} />}
               component="a"
               href="https://drive.google.com/file/d/1v28BIuKEpwPTgGKruHRuqN2y-UmzuN8u/view?usp=sharing"
+              target="_blank"
               download
             >
               View Resume
