@@ -16,8 +16,8 @@ const experiences = [
     technologies: ['TBD'],
     image: 'images/curriculum.jpg',
     responsibilities: [
-      'Preparing for upcoming internship',
-      'Excited to contribute to innovative educational technology'
+      'Preparing for upcoming internship.',
+      'Excited to contribute to innovative educational technology!'
     ]
   },
   {
@@ -28,9 +28,9 @@ const experiences = [
     technologies: ['Express.js', 'AWS', 'React Native', 'Zustand', 'DynamoDB'],
     image: 'images/lasaria.jpg',
     responsibilities: [
-      'Architected scalable backend infrastructure for music platform, implementing efficient DynamoDB schema with GSIs for optimized track, album, and artist metadata retrieval',
-      'Developed Lambda-based audio conversion pipeline, transcoding 15+ file formats to .ogg and reducing storage requirements by 30%',
-      'Constructed comprehensive metadata extraction system, automatically processing technical audio attributes and generating structured database entries',
+      'Architected scalable backend infrastructure for music platform, implementing efficient DynamoDB schema with GSIs for optimized track, album, and artist metadata retrieval.',
+      'Developed Lambda-based audio conversion pipeline, transcoding 15+ file formats to .ogg and reducing storage requirements by 30%.',
+      'Constructed comprehensive metadata extraction system, automatically processing technical audio attributes and generating structured database entries.',
       'Implemented concurrent multi-file upload processing with advanced XHR techniques, enabling simultaneous handling of multiple track uploads and form data, optimizing backend throughput and reducing overall upload latency.'
     ]
   },

@@ -8,43 +8,43 @@ import {
 
 const projects = [
   {
-    title: 'algowar.xyz',
-    description: 'Full-stack coding challenge platform with multiplayer and gamification features',
+    title: 'Algowar',
+    description: 'Full-stack coding challenge platform with multiplayer and gamification features.',
     technologies: ['Next.js', 'Spring Boot', 'PostgreSQL', 'Socket.io'],
     image: 'images/coming-soon.webp',
     link: 'https://github.com/rohanshah35/algowar'
   },
   {
-    title: 'Professor Insights',
-    description: 'Java application for professor ratings using web scraping and NLP',
+    title: 'RateMyProfessor Analyzer',
+    description: 'Java application for professor ratings using web scraping and NLP.',
     technologies: ['Java', 'Selenium', 'JavaFX', 'NLP'],
     image: 'gifs/project-3.gif',
     link: 'https://github.com/lfbianchini/RMP-Search-Tool'
   },
   {
     title: 'Note Genius',
-    description: 'AI-powered note transcription and study guide generator',
+    description: 'AI-powered note transcription and study guide generator.',
     technologies: ['React', 'Azure OCR', 'GPT-4', 'AWS S3'],
     image: 'gifs/project-5.gif',
     link: 'https://github.com/lfbianchini/ergon'
   },
   {
     title: 'Intern Management',
-    description: 'Project management tool with LinkedIn functionality and automation',
+    description: 'Project management tool with LinkedIn functionality and automation.',
     technologies: ['Python', 'Selenium', 'Tkinter', 'Excel'],
     image: 'gifs/project-2.gif',
     link: 'https://github.com/rohanshah35/idwr-sleuth-tool'
   },
   {
     title: 'Daily Cal Archive',
-    description: 'Automated archival research tool for UC Berkeley newspaper',
+    description: 'Automated archival research tool for UC Berkeley newspaper.',
     technologies: ['Java', 'Selenium', 'Azure OCR'],
     image: 'gifs/project-4.gif',
     link: 'https://github.com/lfbianchini/thedailycal-search-tool'
   },
   {
     title: 'Secure File Share',
-    description: 'Full-stack file storage with real-time upload and sharing',
+    description: 'Full-stack file storage with real-time upload and sharing.',
     technologies: ['React', 'Node.js', 'AWS S3', 'PostgreSQL'],
     image: 'gifs/project-1.gif',
     link: 'https://github.com/lfbianchini/dropbox-clone-web-app'
